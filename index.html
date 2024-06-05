@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Recomendação de Filmes</title>
+</head>
+<body>
+    <h1>Recomendação de Filmes</h1>
+    <form method="post">
+        Gênero: <input type="text" name="genero"><br>
+        Diretor: <input type="text" name="diretor"><br>
+        Ator: <input type="text" name="ator"><br>
+        <input type="submit" value="Recomendar">
+    </form>
+    {% if resultado %}
+        <h2>Filme Recomendado: {{ resultado }}</h2>
+    {% endif %}
+</body>
+</html>
